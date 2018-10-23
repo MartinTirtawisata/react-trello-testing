@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: niGIbk70uVTfJdDqIFXmVBCqkZ5JMpsH19lnz1o272t4yAMiY9hDTJiZ3bj4wEpRS35mVqPxatTFzOGkZkQovNu8MMZFADK1VKwYxVwKqU2vP9HUvTsVptVCkhpnUUEo+qJ8JK5Klo4RdB9Zj/DvFDiKUr2KOeXLwh+JUDijthsBeU5XBHt86wI+kdU7CcYTHTTprfS57OgfryZhAhzQGT/VrkMi0MFdutXridju39uK47g1a7gLbcqaSPfds8MttptfvahfBqdfWpkGAD3t3fGWxELnfvAvq/lkkZgZd93Q70tiKt8+fElRYA/y0/Ra08Ze+DLnFVKRFlz8RBjYqkFKxmgBwTw/4JQ13xKWsNhkN+Xo/c21dNC5XWgv3/C03faPZq3UO/42QT63QBwS77gcXwWHjQiVvKxZ5RqHpdR2yZdOjQL38i4so0ekiO5ft7SPRtbWWkjmhvKxHYIBhhmBvlPa/KeO0Cs9z5OyX4q9U6jVA3cB7gGi9IXcezSXpmNBnGYk2XnzVTTV8Z0u/FnnUgqLkycmM5QZyUG0/6G2MekyjpkltuzzFOA63hDmmNYvryOIk/+jXarWNG7+OPwCMjltVtf0S4LBUAonTtdsOlWfTc7KKnRF4b24rcIjgz+L+v3VE7whMnLAkv4MjHpEbc73JFKiYnrpAAtXV8U=
+  app: desolate-wave-54026
+  on:
+    repo: MartinTirtawisata/react-trello-testing
